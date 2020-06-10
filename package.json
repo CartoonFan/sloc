@@ -25,7 +25,7 @@
   "dependencies": {
     "async": "~2.1.4",
     "cli-table": "^0.3.1",
-    "commander": "~2.9.0",
+    "commander": "~2.20.3",
     "readdirp": "^2.1.0"
   },
   "devDependencies": {
