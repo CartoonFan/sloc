@@ -51,7 +51,7 @@ module.exports =
           block comment
           \"""
           # a
-          source.code(); #comment
+          source.code() #comment
 
           # comment
           '''
@@ -64,6 +64,30 @@ module.exports =
       total: 10
       single: 3
       mixed: 1
+      empty: 1
+    }
+    {
+      names: ["rpy"]
+      code:
+        """
+          \"""
+          block comment
+          \"""
+          # a
+          $ source.code() #comment
+          show code #comment
+
+          # comment
+          '''
+          another block comment
+          '''
+        """
+      comment: 10
+      source: 1
+      block: 6
+      total: 11
+      single: 3
+      mixed: 2
       empty: 1
     }
     {
@@ -456,7 +480,7 @@ module.exports =
         source() /* one line block */
         /* one line block */ code()
         /* block */ code() /*
-        */ souce() # comment /* no block */
+        */ source() # comment /* no block */
         """
       comment: 9
       source: 5
@@ -497,7 +521,7 @@ module.exports =
         source() =begin one line block=end
         =begin one line block =end code()
         =begin block =end code() =begin
-        =end souce() # comment =begin no block =end
+        =end source() # comment =begin no block =end
         """
       comment: 9
       source: 5
@@ -691,7 +715,7 @@ module.exports =
         """
         // comment
         body
-          font: 100% Helvecia, sans-serif /* multi
+          font: 100% Helvetica, sans-serif /* multi
           line comments */
         """
       comment: 3
