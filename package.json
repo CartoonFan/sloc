@@ -32,7 +32,7 @@
     "@coffeelint/cli": "^5.2.11",
     "chai": "^4.3.8",
     "coffeescript": "^2.7.0",
-    "mocha": "^10.2.0"
+    "mocha": "^11.2.2"
   },
   "repository": {
     "type": "git",
